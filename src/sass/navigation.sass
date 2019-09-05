@@ -1,0 +1,134 @@
+//----------------------------------
+// Default navbar
+//----------------------------------
+.navbar
+  position: fixed
+  background-color: #242333
+  height: 10.3rem
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  font-family: "Geomanist-Book"
+  z-index: 999
+
+  &__nav
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    flex: 0 0 65%
+
+  &__nav-item
+    text-transform: capitalize
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+    color: #ffffff
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 1.13px
+    padding-left: 3.5rem
+    padding-right: 3.5rem
+
+    &_play
+      padding: 1rem 3.4rem
+      background-image: linear-gradient(to right, #242333 0%, #3c3b53 100%)
+      box-shadow: 0 0 0px 2px rgba(255, 255, 255, 0.46)
+      border-radius: 2.1rem
+      border: 2px solid #212236
+      background-color: #6f6d99
+
+    &_active
+      background-image: linear-gradient(to bottom, #242333 0%, #3c3b53 100%)
+      padding: 42px 34px
+      position: relative
+
+      &::after
+        background-image: linear-gradient(to right, #6e31c6 0%, #d84fc7 100%)
+        bottom: 0
+        content: ""
+        height: 2px
+        left: 0
+        position: absolute
+        right: 0
+
+  &__user-info
+    width: 100%
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &-item
+      width: 3.8rem
+      height: 3.8rem
+      margin-right: 3.8rem
+
+      &_achievement
+
+      &_notification
+
+      &_point
+
+        padding: 2px
+        background-image: linear-gradient(to right, #6e31c6 0%, #d84fc7 100%)
+        min-width: 8rem
+        display: flex;
+        justify-content: center;
+        border-radius: 2rem;
+        margin-right: 2rem
+
+        &-btn
+          background-color: #343247
+          background-image: url(/img/icons/bg_btn_user.png)50% 50% no-repeat
+          background-position: top
+          border-radius: 2rem
+          display: flex
+          width: 100%
+          color: #cecbff
+          font-size: 1.4rem
+          justify-content: center
+          align-items: center
+
+          &_white
+            color: #fff
+          
+      &_user
+        background-image: linear-gradient(to right, #242333 0%, #3c3b53 100%)
+        box-shadow: 0 0 0px 2px rgba(255, 255, 255, 0.46)
+        border-radius: 50%
+        margin-right: 2rem
+
+        &:hover 
+          box-shadow: 0 0 0px 2px #d84fc7
+
+      &_avatar
+        border-radius: 50%
+
+.container
+  width: 100%
+  padding: 0 2rem
+  padding-top: 14.5rem
+  background: url(/img/main-bg.png) 50% 50% no-repeat
+  background-position: top
+  display: flex
+  position: relative
+  z-index: 0
+  top: -0.9rem
+  min-height: 100vh
+
+.back
+  color: #ffffff
+  font-size: 1.8rem
+  font-weight: 400
+  letter-spacing: 0.72px
+  margin-bottom: 35px
+
+  &__icon
+    margin-right: 2rem
+
+.content
+  flex: 0 0 66%
+  
+//   @media #{$media-sm-plus-up}
+//     display: flex
+//     flex-direction: column
+//     justify-content: center
+//     height: 100%

@@ -1,0 +1,37 @@
+block vars
+
+block content
+
+	.navbar
+		nav.navbar__nav
+			a.navbar__nav-item.navbar__nav-item_active(href="/") home
+			a.navbar__nav-item(href="/") Marketplace
+			a.navbar__nav-item(href="/") Booster Packs
+			a.navbar__nav-item.navbar__nav-item_play(href="/") Play
+		.navbar__user-info
+			img.navbar__user-info-item.navbar__user-info-item_achievement(src="./img/icons/achievement.png", alt="achievement")
+			img.navbar__user-info-item.navbar__user-info-item_notification(src="./img/icons/notification.png", alt="notification")
+			div.navbar__user-info-item.navbar__user-info-item_point
+				div.navbar__user-info-item_point-btn(href="/")
+					img(src="./img/icons/gem.png", alt="gem", width="18")
+					div 
+						span.navbar__user-info-item_point-btn_white 1
+						| 42
+			div.navbar__user-info-item.navbar__user-info-item_user
+				img.navbar__user-info-item_avatar(src="https://via.placeholder.com/150")
+	.container
+		div.content
+			.back
+				img.back__icon(src="./img/icons/arroy-left.png", alt="go_back")
+				| Back
+			.pagination
+				div.pref
+					.back
+						img.back__icon(src="./img/icons/arroy-left.png", alt="back")
+						| See Previous
+				div.next
+					.back
+						img.back__icon(src="./img/icons/arroy-left.png", alt="next")
+						| See Next
+		div.right-wrap
+			| 1

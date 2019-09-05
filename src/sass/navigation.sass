@@ -22,8 +22,7 @@
     text-transform: capitalize
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
     color: #ffffff
-    font-size: 14px
-    font-weight: 400
+    font-size: 1.4rem
     letter-spacing: 1.13px
     padding-left: 3.5rem
     padding-right: 3.5rem
@@ -38,7 +37,7 @@
 
     &_active
       background-image: linear-gradient(to bottom, #242333 0%, #3c3b53 100%)
-      padding: 42px 34px
+      padding: 4.2rem 3.4rem
       position: relative
 
       &::after
@@ -67,7 +66,7 @@
 
       &_point
 
-        padding: 2px
+        padding: 0.2rem
         background-image: linear-gradient(to right, #6e31c6 0%, #d84fc7 100%)
         min-width: 8rem
         display: flex;
@@ -88,7 +87,7 @@
           align-items: center
 
           &_white
-            color: #fff
+            color: #ffffff
           
       &_user
         background-image: linear-gradient(to right, #242333 0%, #3c3b53 100%)
@@ -123,7 +122,7 @@
   font-size: 1.8rem
   font-weight: 400
   letter-spacing: 0.72px
-  margin-bottom: 35px
+  margin-bottom: 3.5rem
   cursor: pointer
 
   &__icon
@@ -138,7 +137,7 @@
   display: flex
   justify-content: space-between
   padding: 3rem 2.7rem
-  border-radius: 15px;
+  border-radius: 1.5rem
   margin-bottom: 2rem
 
   &__control
@@ -150,14 +149,100 @@
 .publication
   background-color: rgb(36, 35, 51)
   width: 100%
-  min-height: 500px
   border-radius: 1.5rem
   padding: 2.5rem
-  margin-bottom: 20px
+  margin-bottom: 2rem
+  color: #9d9acc
+  font-size: 1.6rem;
 
   &__img
     width: 100%
-    max-height: 308px
+    // max-height: 308px
+
+  &__title
+    font-size: 2.2rem
+    font-weight: 500
+    letter-spacing: 0.88px
+    color: #ffffff
+    margin-bottom: 2px
+
+  &__date
+    letter-spacing: 0.64px
+    font-size: 1.6rem
+    margin: 0
+
+  &__text
+    color: #9d9acc
+    line-height: 2.5rem
+    letter-spacing: 0.64px
+    font-size: 1.6rem
+
+    &_second
+      margin-top: 20px
+
+  &__footer
+    width: calc(100% + 50px)
+    border-top: 2px solid #9d9acc3d
+    position: relative
+    right: 25px
+    display: flex
+    justify-content: space-between
+    padding: 28px 36px 5px
+
+    &-feedback
+      display: flex
+
+      &-wrap
+        margin-right: 4.6rem
+
+      &-icon
+        margin-right: 1.5rem
+
+    &-social
+      display: flex
+
+      &-icon
+        margin-right: 2.2rem
+
+        &_last
+          margin-right: 0
+
+.comment
+  background-color: rgb(36, 35, 51)
+  width: 100%
+  border-radius: 1.5rem
+  padding: 2.5rem
+  margin-bottom: 2rem
+  color: #9d9acc
+  font-size: 1.6rem;
+
+  &__header
+    width: calc(100% + 50px)
+    border-bottom: 2px solid #9d9acc3d
+    position: relative
+    right: 25px
+    display: flex
+    justify-content: space-between
+    padding: 0px 30px 22px;
+
+    &-comments
+
+      &-wrap
+        letter-spacing: 0.72px;
+
+      &-icon
+        margin-right: 20px
+
+      &-span
+        color: #ffffff
+
+
+
+
+
+
+
+
 
 
 //   @media #{$media-sm-plus-up}

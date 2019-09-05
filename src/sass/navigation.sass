@@ -108,11 +108,15 @@
   padding-top: 14.5rem
   background: url(/img/main-bg.png) 50% 50% no-repeat
   background-position: top
+  background-color: #323145
   display: flex
   position: relative
   z-index: 0
-  top: -0.9rem
+  top: -1rem
   min-height: 100vh
+
+.content
+  flex: 0 0 66%
 
 .back
   color: #ffffff
@@ -120,13 +124,42 @@
   font-weight: 400
   letter-spacing: 0.72px
   margin-bottom: 35px
+  cursor: pointer
 
   &__icon
     margin-right: 2rem
 
-.content
-  flex: 0 0 66%
-  
+.pagination
+  background-color: #242333
+  opacity: 0.8
+  color: #9390bf
+  font-size: 1.4rem
+  letter-spacing: 0.56px
+  display: flex
+  justify-content: space-between
+  padding: 3rem 2.7rem
+  border-radius: 15px;
+  margin-bottom: 2rem
+
+  &__control
+    cursor: pointer
+
+    & .next__icon
+      margin-left: 2rem
+
+.publication
+  background-color: rgb(36, 35, 51)
+  width: 100%
+  min-height: 500px
+  border-radius: 1.5rem
+  padding: 2.5rem
+  margin-bottom: 20px
+
+  &__img
+    width: 100%
+    max-height: 308px
+
+
 //   @media #{$media-sm-plus-up}
 //     display: flex
 //     flex-direction: column

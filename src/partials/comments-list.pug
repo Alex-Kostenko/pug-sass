@@ -1,0 +1,16 @@
+block vars
+
+block content
+.comment
+  .comment__header
+    .comment__header-comments
+      .comment__header-comments-wrap
+        img.comment__header-comments-icon(src="/img/icons/comment.png", alt="comment")
+        | Comments: 
+        span.comment__header-comments-span 48
+
+    .comment__header-btn
+      a.comment__header-btn-item.comment__header-btn_active(href="/") Popular
+      a.comment__header-btn-item(href="/") Recent
+
+  include comment

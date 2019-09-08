@@ -1,6 +1,10 @@
 //----------------------------------
 // Default navbar
 //----------------------------------
+$gradient-start: #242333
+$gradient-end: #3c3b53
+$gray: rgba(255, 255, 255, 0.46)
+
 .navbar
   position: fixed
   background-color: #242333
@@ -29,14 +33,14 @@
 
     &_play
       padding: 1rem 3.4rem
-      background-image: linear-gradient(to right, #242333 0%, #3c3b53 100%)
-      box-shadow: 0 0 0px 2px rgba(255, 255, 255, 0.46)
+      background-image: linear-gradient(to right, $gradient-start 0%, #3c3b53 100%)
+      box-shadow: 0 0 0px 2px $gray
       border-radius: 2.1rem
       border: 2px solid #212236
       background-color: #6f6d99
 
     &_active
-      background-image: linear-gradient(to bottom, #242333 0%, #3c3b53 100%)
+      background-image: linear-gradient(to bottom, $gradient-start 0%, #3c3b53 100%)
       padding: 4.2rem 3.4rem
       position: relative
 
@@ -90,8 +94,8 @@
             color: #ffffff
           
       &_user
-        background-image: linear-gradient(to right, #242333 0%, #3c3b53 100%)
-        box-shadow: 0 0 0px 2px rgba(255, 255, 255, 0.46)
+        background-image: linear-gradient(to right, $gradient-start 0%, $gradient-end 100%)
+        box-shadow: 0 0 0px 2px $gray
         border-radius: 50%
         margin-right: 2rem
 
@@ -100,10 +104,3 @@
 
       &_avatar
         border-radius: 50%
-
-
-//   @media #{$media-sm-plus-up}
-//     display: flex
-//     flex-direction: column
-//     justify-content: center
-//     height: 100%

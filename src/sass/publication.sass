@@ -5,7 +5,7 @@
   padding: 2.5rem
   margin-bottom: 2rem
   color: #9d9acc
-  font-size: 1.6rem;
+  font-size: 1.6rem
 
   &__img
     width: 100%
@@ -41,8 +41,15 @@
     justify-content: space-between
     padding: 28px 36px 5px
 
+    @media #{$media-sm}
+      flex-direction: column
+      align-items: center
+
     &-feedback
       display: flex
+
+      @media #{$media-sm}
+        margin-bottom: 15px
 
       &-wrap
         margin-right: 4.6rem

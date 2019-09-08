@@ -10,10 +10,16 @@
   z-index: 0
   top: -1rem
   min-height: 100vh
+
+  @media #{$media-lg}
+    flex-direction: column
   
   .content
     flex: 0 0 66%
-    padding-right: 3.5rem
+    padding-right: 35px
+
+    @media #{$media-lg}
+      padding-right: 0
 
   .news
     width: 100%
@@ -23,3 +29,17 @@
       font-size: 1.8rem
       letter-spacing: 0.72px
       margin-bottom: 3.5rem
+
+      @media #{$media-sm}
+        margin-bottom: 0.5rem
+
+    &__card-wrap
+      @media #{$media-lg}
+        display: flex
+        justify-content: space-between
+        
+      @media #{$media-lg}
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        align-items: center

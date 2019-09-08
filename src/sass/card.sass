@@ -1,34 +1,67 @@
+$primary: #9d9acc
+$white: #ffffff
+$bg-color: #242333d1
+
 .card
 
   &-wrap
     margin-bottom: 4rem
-    max-height: 26.2rem
-    max-width: 44.2rem
+    width: 44.2rem
     min-height: 26.2rem
     display: flex
     align-items: flex-end
+    justify-content: center 
     border-radius: 1rem
+
+    @media #{$media-lg}
+      width: 30%
+      margin-top: 80px
+      min-height: 15rem
+    
+    @media #{$media-sm-plus}
+      width: 44.2rem
+      min-height: 26.2rem
+      margin-top: 0
+
+    @media #{$media-sm}
+      width: 100%
+      min-height: 20.2rem
+      margin: 0
+      margin-bottom: 1.5rem
 
   &__img
     position: absolute
     z-index: 0
 
+    @media #{$media-lg}
+      width: 29%
+
+    @media #{$media-lg}
+      width: auto
+    
+    @media #{$media-sm}
+      width: 90%
+
   &__content-wrap
     position: relative
     z-index: 1
     border-radius: 0 0 1rem 1rem
-    background-color: #242333d1
+    background-color: $bg-color
     padding: 2.5rem
 
+    @media #{$media-md-down}
+      padding: 1rem
+   
+
   &__title
-    color: #ffffff
+    color: $white
     font-size: 1.8rem
     letter-spacing: 0.72px
     line-height: 1
     margin-bottom: 1.5rem
 
   &__text
-    color: #9d9acc
+    color: $primary
     font-size: 1.4rem
     letter-spacing: 0.56px
     line-height: 1.2

@@ -7,21 +7,21 @@ $gradient-end: #ff905a
   
 .comment
   background-color: rgb(36, 35, 51)
-  width: 100%
   border-radius: 1.5rem
-  padding: 2.5rem
-  margin-bottom: 2rem
   color: $primary
   font-size: 1.6rem
+  margin-bottom: 2rem
+  padding: 2.5rem
+  width: 100%
 
   &__header
-    width: calc(100% + 5rem)
     border-bottom: 0.2rem solid $primary-opacity
-    position: relative
-    right: 2.5rem
     display: flex
     justify-content: space-between
     padding: 0px 3rem 2.2rem
+    position: relative
+    right: 2.5rem
+    width: calc(100% + 5rem)
 
     @media #{$media-sm}
       flex-direction: column
@@ -51,9 +51,9 @@ $gradient-end: #ff905a
 
 
       &_active
-        position: relative
         color: $white
         outline-color: $white
+        position: relative
         
         &::after
           background-image: linear-gradient(to right, $gradient-start 0%, $gradient-end 100%)
@@ -68,32 +68,46 @@ $gradient-end: #ff905a
     padding-top: 28px
 
     &-input
-      width: 100%
       background-color: $secondary
-      border: 0
-      height: 62px
       border-radius: 5px
-      padding-left: 27px
+      border: 0
       color: $primary
       font-size: 16px
+      height: 62px
       margin-bottom: 20px
+      padding-left: 27px
+      width: 100%
 
       &::placeholder
         color: $primary
         font-size: 16px
     
+    &-submit
+      background-color: transparent
+      background: url(/img/icons/right-arrow.png) center center no-repeat
+      border: 0
+      cursor: pointer
+      filter: invert(1)
+      position: absolute
+      right: 30px
+      top: 22px
+      width: 40px
+
+    &-form
+      position: relative
+    
     &-comment
-      display: flex
       align-items: flex-start
       border-bottom: 2px solid $secondary
-      padding-bottom: 23px
+      display: flex
       margin-top: 18px
+      padding-bottom: 23px
 
       &-avatar
         border-radius: 50%
-        width: 60px
         height: 60px
         margin-right: 17px
+        width: 60px
     
     &-title
       display: flex
@@ -101,18 +115,18 @@ $gradient-end: #ff905a
       margin-bottom: 3px
 
     &-name-user
-      margin-right: 13px
       font-size: 18px
-      line-height: 40px
       letter-spacing: 0.72px
+      line-height: 40px
+      margin-right: 13px
 
     &-date
-      opacity: 0.5
       color: $primary
       line-height: 40px
+      opacity: 0.5
     
     &-text
       color: $white
       font-size: 14px
-      line-height: 24px
       letter-spacing: 0.56px
+      line-height: 24px

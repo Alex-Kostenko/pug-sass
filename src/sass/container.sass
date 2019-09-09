@@ -1,15 +1,15 @@
 .container
-  width: 100%
-  padding: 0 2rem
-  padding-top: 14.5rem
   background: url(/img/main-bg.png) 50% 50% no-repeat
   background-position: top
   background-color: #323145
   display: flex
-  position: relative
-  z-index: 0
-  top: -1rem
   min-height: 100vh
+  padding: 0 2rem
+  padding-top: 14.5rem
+  position: relative
+  top: -1rem
+  width: 100%
+  z-index: 0
 
   @media #{$media-lg}
     flex-direction: column
@@ -42,10 +42,10 @@
         justify-content: space-between
         
       @media #{$media-sm}
-        display: flex
-        justify-content: space-between
-        flex-direction: column
         align-items: center
+        display: flex
+        flex-direction: column
+        justify-content: space-between
   
 .close-content
   display: none

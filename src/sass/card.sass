@@ -11,11 +11,16 @@ $bg-color: #242333d1
     justify-content: center 
     margin-bottom: 4rem
     width: 44.2rem
+    position: relative
+
+    &:hover
+      box-shadow: -7px 7px #9d9acc,-6px 6px #9d9acc,-5px 5px #9d9acc,-4px 4px #9d9acc,-3px 3px #9d9acc,-2px 2px #9d9acc,-1px 1px #9d9acc
+      transform: translate(7px, -7px)
 
     @media #{$media-lg}
       width: 30%
 
-    
+
     @media #{$media-xs-down}
       width: 44.2rem
 
@@ -36,19 +41,11 @@ $bg-color: #242333d1
     position: absolute
     width: 44.2rem
     z-index: 1
+    width: 100%
 
     @media #{$media-md-down}
       padding: 1rem
-    
-    @media #{$media-lg}
-      width: 29%
-    
-    @media #{$media-sm}
-      width: 94.4%
 
-    @media #{$media-xs}
-      width: 92%
-   
 
   &__title
     color: $white

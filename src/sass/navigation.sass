@@ -1,13 +1,17 @@
 //----------------------------------
 // Default navbar
 //----------------------------------
-$gradient-start: #242333
+$primary: #242333
+$gradientBtn-start: #6e31c6
+$gradientBtn-end: #ea4bd9
+$gradient-start: $primary
 $gradient-end: #3c3b53
 $gray: rgba(255, 255, 255, 0.46)
+$white: #ffffff
 
 .navbar
   position: fixed
-  background-color: #242333
+  background-color: $primary
   height: 10.3rem
   width: 100%
   display: flex
@@ -49,14 +53,14 @@ $gray: rgba(255, 255, 255, 0.46)
   &__nav-item
     text-transform: capitalize
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
-    color: #ffffff
+    color: $white
     font-size: 1.4rem
     letter-spacing: 1.13px
     padding-left: 3.5rem
     padding-right: 3.5rem
 
     &:hover
-      color: #ea4bd9
+      color: $gradientBtn-end
 
     @media #{$media-sm-plus-down:}
       width: 100%
@@ -72,13 +76,13 @@ $gray: rgba(255, 255, 255, 0.46)
       border-radius: 21px
      
       &:hover
-        background-image: linear-gradient(to right, #6e31c6 0%, #d84fc7 100%)
+        background-image: linear-gradient(to right, $gradientBtn-start 0%, $gradientBtn-end 100%)
 
       &_bg
         background-image: linear-gradient(to right, $gradient-start 0%, #3c3b53 100%)
         border-radius: 21px
         padding: 1.3rem 3.8rem
-        border: 2px solid #242333
+        border: 2px solid $primary
 
 
     &_active
@@ -87,7 +91,7 @@ $gray: rgba(255, 255, 255, 0.46)
       position: relative
 
       &::after
-        background-image: linear-gradient(to right, #6e31c6 0%, #d84fc7 100%)
+        background-image: linear-gradient(to right, $gradientBtn-start 0%, $gradientBtn-end 100%)
         bottom: 0
         content: ""
         height: 2px
@@ -119,7 +123,7 @@ $gray: rgba(255, 255, 255, 0.46)
 
       &_point
         padding: 0.2rem
-        background-image: linear-gradient(to right, #6e31c6 0%, #d84fc7 100%)
+        background-image: linear-gradient(to right, $gradientBtn-start 0%, $gradientBtn-end 100%)
         min-width: 8rem
         display: flex
         justify-content: center
@@ -141,7 +145,7 @@ $gray: rgba(255, 255, 255, 0.46)
           align-items: center
 
           &_white
-            color: #ffffff
+            color: $white
           
       &_user
         background-image: linear-gradient(to right, $gradient-start 0%, $gradient-end 100%)
@@ -150,7 +154,7 @@ $gray: rgba(255, 255, 255, 0.46)
         margin-right: 2rem
 
         &:hover 
-          box-shadow: 0 0 0px 2px #d84fc7
+          box-shadow: 0 0 0px 2px $gradientBtn-end
 
       &_avatar
         border-radius: 50%
@@ -161,7 +165,7 @@ $gray: rgba(255, 255, 255, 0.46)
     width: 100vw
     height: 100vh
     position: absolute
-    background: #242333
+    background: $primary
     border-top: 2px solid rebeccapurple
     flex-direction: column
     align-items: flex-start

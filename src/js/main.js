@@ -6,8 +6,6 @@ const handlerToogleMenu = function(user) {
   var content = document.getElementById('content');
 
   const onToogleMenu = () => {
-    console.log(content);
-    
     navbar.classList.toggle('menu-show');
     content.classList.toggle('close-content');
   };

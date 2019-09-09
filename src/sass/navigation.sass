@@ -55,6 +55,9 @@ $gray: rgba(255, 255, 255, 0.46)
     padding-left: 3.5rem
     padding-right: 3.5rem
 
+    &:hover
+      color: #ea4bd9
+
     @media #{$media-sm-plus-down:}
       width: 100%
       text-align: center
@@ -164,3 +167,12 @@ $gray: rgba(255, 255, 255, 0.46)
     align-items: flex-start
     justify-content: flex-start
     left: 0
+    animation: slide .1s ease
+
+@keyframes slide
+  0%
+    transform: scaleY(0)
+    opacity: 0
+  100%
+    transform: scaleY(1)
+    opacity: 1

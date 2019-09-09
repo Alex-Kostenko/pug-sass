@@ -1,4 +1,4 @@
-const handlerToogleMenu = function(user) {
+(function() {
   "use strict";
 
   var navbar = document.getElementById('menu');
@@ -12,6 +12,4 @@ const handlerToogleMenu = function(user) {
 
   icon.addEventListener('click', onToogleMenu);
   icon.addEventListener('touch', onToogleMenu);
-};
-
-handlerToogleMenu();
+})()

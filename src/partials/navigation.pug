@@ -10,10 +10,12 @@ block content
 			a.navbar__nav-item.navbar__nav-item_play(href="/") 
 				.navbar__nav-item.navbar__nav-item_play_bg Play
 		.navbar__user-info
-			a(href="/")
+			a.navbar__link(href="/")
 				img.navbar__user-info-item.navbar__user-info-item_achievement(src="./img/icons/achievement.png", alt="achievement")
-			a(href="/")
+				.navbar__indicator.navbar__indicator_achievement
+			a.navbar__link(href="/")
 				img.navbar__user-info-item.navbar__user-info-item_notification(src="./img/icons/notification.png", alt="notification")
+				.navbar__indicator.navbar__indicator_notification
 			.navbar__user-info-item.navbar__user-info-item_point
 				.navbar__user-info-item_point-btn(href="/")
 					img.navbar__icon(src="./img/icons/gem.png", alt="gem", width="35")

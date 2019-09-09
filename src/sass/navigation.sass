@@ -165,18 +165,39 @@ $white: #ffffff
         border-radius: 50%
 
   .menu-show
-    display: flex
-    top: 203px
-    width: 100vw
-    height: 100vh
-    position: absolute
+    align-items: flex-start
+    animation: slide .1s ease
     background: $primary
     border-top: 2px solid rebeccapurple
+    display: flex
     flex-direction: column
-    align-items: flex-start
+    height: 100vh
     justify-content: flex-start
     left: 0
-    animation: slide .1s ease
+    position: absolute
+    top: 203px
+    width: 100vw
+
+  &__link
+    position: relative
+  
+  &__indicator
+    border-radius: 50%
+    height: 10px
+    position: absolute
+    right: 14px
+    top: 0
+    width: 10px
+
+    &_notification
+      background-color: #48d496
+      border: 4px solid #48d49669
+      box-shadow: 0 0 10px #48d496, 0 0 0px 5px #242419
+
+    &_achievement
+      background-color: #9e3dc7
+      border: 4px solid #9e3dc7
+      box-shadow: 0 0 10px #9e3dc7, 0 0 0px 5px #242419
 
 @keyframes slide
   0%

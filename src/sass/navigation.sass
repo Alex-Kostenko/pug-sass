@@ -16,6 +16,22 @@ $gray: rgba(255, 255, 255, 0.46)
   font-family: "Geomanist-Book"
   z-index: 999
 
+  .menu-sm
+    display: none
+    width: 55px
+    height: 55px
+    background: url(/img/menu-icon.png) center center no-repeat
+    cursor: pointer
+    position: absolute;
+    left: 0;
+    
+    &:hover
+      filter: brightness(0) invert(1)
+
+    @media #{$media-sm-plus-down:}
+      display: block
+      margin-left: 12px
+
   &__icon
     margin-left: -15px
     margin-top: 10px
@@ -26,6 +42,10 @@ $gray: rgba(255, 255, 255, 0.46)
     align-items: center
     flex: 0 0 65%
 
+    @media #{$media-sm-plus-down:}
+      display: none
+      transform: translate(0px, -100px)
+
   &__nav-item
     text-transform: capitalize
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
@@ -34,6 +54,11 @@ $gray: rgba(255, 255, 255, 0.46)
     letter-spacing: 1.13px
     padding-left: 3.5rem
     padding-right: 3.5rem
+
+    @media #{$media-sm-plus-down:}
+      width: 100%
+      text-align: center
+      padding: 4.2rem 3.4rem
   
     &_play
       display: flex
@@ -44,7 +69,6 @@ $gray: rgba(255, 255, 255, 0.46)
       border-radius: 21px
      
       &:hover
-        
         background-image: linear-gradient(to right, #6e31c6 0%, #d84fc7 100%)
 
       &_bg
@@ -70,14 +94,17 @@ $gray: rgba(255, 255, 255, 0.46)
 
   &__user-info
     width: 100%
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: flex
+    justify-content: flex-end
+    align-items: center
 
     &-item
       width: 3.8rem
       height: 3.8rem
       margin-right: 3.8rem
+
+      @media #{$media-xs}
+        margin-right: 1rem
 
       &_achievement
         &:hover
@@ -95,6 +122,9 @@ $gray: rgba(255, 255, 255, 0.46)
         justify-content: center
         border-radius: 2rem
         margin-right: 2rem
+
+        @media #{$media-xs}
+          margin-right: 1rem
 
         &-btn
           background: url(/img/icons/bg_btn_user.png) -12px
@@ -121,3 +151,16 @@ $gray: rgba(255, 255, 255, 0.46)
 
       &_avatar
         border-radius: 50%
+
+  .menu-show
+    display: flex
+    top: 203px
+    width: 100vw
+    height: 100vh
+    position: absolute
+    background: #242333
+    border-top: 2px solid rebeccapurple
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    left: 0

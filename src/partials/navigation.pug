@@ -2,15 +2,18 @@ block vars
 
 block content
 	.navbar
-		nav.navbar__nav
+		.menu-sm#open
+		nav.navbar__nav#menu
 			a.navbar__nav-item.navbar__nav-item_active(href="/") home
 			a.navbar__nav-item(href="/") Marketplace
 			a.navbar__nav-item(href="/") Booster Packs
 			a.navbar__nav-item.navbar__nav-item_play(href="/") 
 				.navbar__nav-item.navbar__nav-item_play_bg Play
 		.navbar__user-info
-			img.navbar__user-info-item.navbar__user-info-item_achievement(src="./img/icons/achievement.png", alt="achievement")
-			img.navbar__user-info-item.navbar__user-info-item_notification(src="./img/icons/notification.png", alt="notification")
+			a(href="/")
+				img.navbar__user-info-item.navbar__user-info-item_achievement(src="./img/icons/achievement.png", alt="achievement")
+			a(href="/")
+				img.navbar__user-info-item.navbar__user-info-item_notification(src="./img/icons/notification.png", alt="notification")
 			.navbar__user-info-item.navbar__user-info-item_point
 				.navbar__user-info-item_point-btn(href="/")
 					img.navbar__icon(src="./img/icons/gem.png", alt="gem", width="35")
